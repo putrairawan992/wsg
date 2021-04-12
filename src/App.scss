@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+// Set your brand colors
+$green: #51c2a8;
+$green-light: #86d4c2;
+$black: #221f1f;
+$gray: #8c8c8c;
+
+// Update Bulma's global variables
+$family-sans-serif: 'Roboto', sans-serif;
+$grey-dark: $black;
+$grey-light: $gray;
+$primary: $green;
+// $link: $pink;
+// $widescreen-enabled: false;
+// $fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+// $body-background-color: $beige-lighter;
+// $control-border-width: 2px;
+// $input-border-color: transparent;
+// $input-shadow: none;
+
+$navbar-breakpoint: 768px;
+
+// Import only what you need from Bulma
+@import '../node_modules/bulma/sass/utilities/_all.sass';
+@import '../node_modules/bulma/sass/layout/_all.sass';
+@import '../node_modules/bulma/sass/grid/_all.sass';
+@import '../node_modules/bulma/sass/base/_all.sass';
+@import '../node_modules/bulma/sass/elements/_all.sass';
+@import '../node_modules/bulma/sass/components/_all.sass';
+@import '../node_modules/bulma/sass/form/_all.sass';
+@import '../node_modules/bulma/sass/helpers/_all.sass';
+
+// Modifier
+html {
+  overflow-y: auto;
+}
+
+.button:focus:not(:active),
+.button.is-focused:not(:active) {
+  box-shadow: none;
+}
+
+// Button
+.is-primary-light {
+  color: #8c8c8c;
+  border: none;
+
+  &:active,
+  &.is-active,
+  &.is-active:hover {
+    color: #51c2a8;
+    background-color: #dcf3ee;
+    font-weight: bold;
+  }
+
+  &:hover {
+    color: #8c8c8c;
+    font-weight: bold;
+  }
+}
+
+// Title Sections
+.title-section {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  background-color: white;
+
+  h1 {
+    color: #143f8f !important;
+    font-size: 1.5em;
+    font-weight: 900;
+  }
+}

@@ -1,0 +1,83 @@
+$color: #e8383e;
+
+.trainee-bg {
+  // background: url('../../assets/wsg-bg.png'), #eee;
+  height: 100vh;
+
+  & > img {
+    height: 100vh;
+    width: auto;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .circle-info {
+    cursor: pointer;
+  }
+
+  .modal-title,
+  .modal-subtitle {
+    color: $color;
+    font-weight: bold;
+  }
+
+  .modal-title {
+    font-size: 24px;
+  }
+
+  .modal-subtitle {
+    font-size: 16px;
+  }
+
+  .modal-paragraph {
+    font-size: 16px;
+  }
+
+  .modal-close {
+    background: white;
+    box-shadow: 0px 1px 1px;
+  }
+
+  .modal-close::before,
+  .modal-close::after {
+    background-color: black;
+  }
+
+  ul {
+    list-style: none;
+    margin-inline-start: 30px;
+
+    & li::before {
+      content: "\2022";
+      color: red;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+  }
+
+  & table {
+    border: 2px solid white;
+  }
+
+  & table thead tr {
+    background: $color;
+  }
+
+  & table thead tr th,
+  & table tbody tr td {
+    color: white;
+    border: 2px solid white;
+    padding: 6px;
+    font-size: 13px;
+  }
+
+  & table thead tr th {
+    background-color: $color;
+  }
+
+  & table tbody tr td {
+    background-color: #fb5358;
+  }
+}
